@@ -1,0 +1,137 @@
+.container {
+    width: 100%;
+    padding: 0;
+    margin: 0;
+}
+
+.header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 10px 20px;
+    background-color: white;
+}
+
+.logoNav {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    width: 100%;
+}
+
+#logo {
+    height: 40px; 
+    cursor: pointer;
+}
+
+.navigation {
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+    flex-grow: 1;
+    margin-left: 100px;
+    gap: 50px;
+}
+
+.navigation nav {
+    cursor: pointer;
+    font-weight: 500;
+    padding: 10px;
+    text-align: center;
+    transition: color 0.3s ease;
+}
+
+
+#menu {
+    display: none; 
+}
+
+.loginBtn {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+}
+
+.loginBtn nav {
+    cursor: pointer;
+    font-weight: 500;
+    padding: 10px;
+}
+
+button {
+    padding: 10px 20px;
+    background-color: white;
+    color: black;
+    border: 1px solid black;
+    border-radius: 10px;
+    cursor: pointer;
+    
+}
+
+
+@media (max-width: 768px) {
+    .flip {
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        padding: 20px;
+    }
+
+    .bottomleft {
+        order: 2; 
+        text-align: center; 
+    }
+
+    .side {
+        order: 1; 
+        width: 100%;
+        display: flex;
+        justify-content: center;
+    }
+
+    #desktop {
+        display: none; 
+    }
+
+    #mobile {
+        display: block;
+        width: 100%;
+        height: auto;
+    }
+
+    .navigation {
+        display: none;
+    }
+
+    #menu {
+        display: block; 
+        cursor: pointer;
+    }
+
+    .loginBtn {
+        display: none;
+    }
+    
+    
+    button {
+        width: 100%;
+        padding: 15px;
+        font-size: 16px;
+    }
+
+    
+    img {
+        max-width: 100%;
+        height: auto;
+    }
+
+   
+    section {
+        padding: 20px 10px;
+    }
+
+    .mobileCentered {
+        text-align: center;
+        padding: 10px;
+    }
+}
